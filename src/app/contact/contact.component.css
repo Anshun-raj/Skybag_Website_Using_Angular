@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contact {
+  width: 100%;
+  height: 606px;
+}
+.contact .title {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.contact span {
+  color: red;
+}
+
+.contact .contactInfo {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contactInfo form {
+  width: 500px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact .contactInfo form input {
+  width: 90%;
+  height: 4.5vh;
+  margin: 15px;
+}
+
+.contact .contactInfo form input::placeholder{
+    padding: 0 5px;
+}
+
+.contact .contactInfo form button {
+  display: block;
+  position: relative;
+  left: 41%;
+  margin: 15px 0;
+  padding: 8px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: red;
+  color: #fff;
+  transition: 0.5s all;
+}
+
+.contact .contactInfo form button:hover{
+   color: red;
+   background-color: black;
+}

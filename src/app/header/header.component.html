@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="../assets/images/logo.jpeg" />
+      <div class="navbar">
+        <a routerLink="home">Home</a>
+        <a routerLink="about">About</a>
+        <a routerLink="product">Product</a>
+        <a routerLink="service">Service</a>
+        <a routerLink="review">Review</a>
+        <a routerLink="contact">Contact</a>
+        <a routerLink="cart"><i class="fas fa-shopping-cart"></i><span>{{totalItem}}</span></a>
+      </div>
+    </div>
+  </body>
+  <router-outlet></router-outlet>
+</html>

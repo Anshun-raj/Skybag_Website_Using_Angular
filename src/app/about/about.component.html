@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="about">
+      <h2 class="title">About<span>Us</span></h2>
+      <div class="aboutInfo">
+        <div class="aboutLeft">
+          <img src="../assets/images/about9.jpg" />
+        </div>
+        <div class="aboutRight">
+          <h3>Quality Is Remembered Long After Price Is Forgotten</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+            nihil inventore error provident at natus placeat, quia est unde
+            adipisci consectetur voluptatibus assumenda. Quaerat dolor eligendi
+            tempora vel quisquam aliquid laboriosam cupiditate accusantium
+            similique atque! Recusandae fuga est veritatis explicabo.
+          </p>
+          <p>{{ReadMore?"":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+            nihil inventore error provident at natus placeat, quia est unde
+            adipisci consectetur voluptatibus assumenda."}}</p>
+          <div class="achieve">
+            <div class="quality">
+              <img src="../assets/images/about4.jpeg" />
+              <h5>Best Quality</h5>
+            </div>
+            <div class="award">
+              <img src="../assets/images/about6.jpeg" />
+              <h5>Award Winning</h5>
+            </div>
+          </div>
+          <button class="btn" (click)="changeTxt()">{{ReadMore?"Read More":"Read Less"}}</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

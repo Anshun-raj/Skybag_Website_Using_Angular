@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="product">
+    <h2 class="title">Product</h2>
+    <div class="productInfo">
+      @for(product of products; track product.id){
+        <div class="productCard">
+          <img [src]="product.img"/>
+          <h4>{{ product.name }}</h4>
+          <h5>Rs:-{{ product.price }}</h5>
+          <button (click)="addToCart(product)">Add to Cart</button>
+        </div>
+      }
+    </div>
+  </div>  
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.home {
+  background-image: url("../../assets/images/home1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 606px;
+}
+
+.homeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.homeInfo h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: yellow;
+  line-height: 1.3;
+}
+
+.homeInfo h4 {
+    line-height: 1.6;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.homeInfo p{
+    font-size: 17.5px;
+    text-align: center;
+    padding: 10px 40px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.homeInfo .btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.homeInfo .btn:hover{
+    background-color: red;
+}

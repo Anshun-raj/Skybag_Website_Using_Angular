@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="cart">
+        <h2 class="title">Cart</h2>
+        <div class="cartInfo">
+            @for(item of cartService.getItems(); track item.id){
+                <div class="cartList">
+                    <img [src]="item.img"/>
+                    <h4>{{ item.name }}</h4>
+                    <h5>{{ item.price }}</h5>
+                    <button (click)="deleteFromCart(item)">Remove</button>
+                </div>    
+            }
+        </div>
+     </div>
+</body>
+</html>
+
+
+
+
+                   
+
+
+                    
+

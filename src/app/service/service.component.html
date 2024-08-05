@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="service">
+        <h2 class="title">Our<span> Service</span></h2>
+        <div class="serviceInfo">
+           <div class="serviceCard">
+             <img src="../assets/images/service3.jpg" alt=""/>
+             <h4>Pin Lock</h4>
+             <h5>{{count1 >= 1 ? "Booked for" : "Book Now for"}}: <span>{{count1}}</span></h5>
+             <div class="variable">
+              <button class="btn" (click)="increment1()">+</button>
+              <button class="btn" (click)="decrement1()">-</button>
+            </div>
+           </div>
+           <div class="serviceCard">
+            <img src="../assets/images/service7.jpg" alt=""/>
+            <h4>Stretch Handle</h4>
+            <h5>{{count2 >= 1 ? "Booked for" : "Book Now for"}}: <span>{{count2}}</span></h5>
+            <div class="variable">
+              <button class="btn" (click)="increment2()">+</button>
+              <button class="btn" (click)="decrement2()">-</button>
+            </div>
+           </div>
+           <div class="serviceCard">
+             <img src="../assets/images/service2.jpg" alt=""/>
+             <h4>360 Wheeler</h4>
+             <h5>{{count3 >= 1 ? "Booked for" : "Book Now for"}}: <span>{{count3}}</span></h5>
+             <div class="variable">
+               <button class="btn" (click)="increment3()">+</button>
+               <button class="btn" (click)="decrement3()">-</button>
+             </div>
+             
+           </div>
+        </div>
+      </div>
+</body>
+</html>
