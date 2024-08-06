@@ -8,6 +8,10 @@ import { ServiceComponent } from './service/service.component';
 import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
+     {
+        path:'',
+        component:HomeComponent
+    },
     {
         path:'home',
         component:HomeComponent
